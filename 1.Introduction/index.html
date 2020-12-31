@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><br></title>
+</head>i
+
+<body>
+    <h2 id="demo">Apa yang bisa dilakukan JavaScript?</h2>
+
+    <p id="pertama"></p>
+    <p id="kedua">Ini sebuah paragraph</p>
+    <button type="button" onclick="myFunction()">ubah</button>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Klik disini</button>
+
+    <script>
+        document.getElementById('pertama').innerHTML = "JavaScript pertamaku!";
+
+        function myFunction() {
+            document.getElementById('kedua').innerHTML = "Ini adalah JavaScript menggunakan Function";
+        }
+    </script>
+</body>
+
+</html>

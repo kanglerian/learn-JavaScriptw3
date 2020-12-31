@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output - Learning JavaScript</title>
+</head>
+
+<body>
+
+    <h2>Using InnerHTML</h2>
+    <p>Angka dibawah ini adalah :</p>
+    <p id="jml"></p>
+
+    <br><br>
+
+    <h2>Using document.write</h2>
+    <p>Menyimpannya dibawah :</p>
+
+    <br><br>
+
+    <h2>document.write akan menghapus semuanya</h2>
+    <button type="button" onclick="document.write('kan kosong? :D')">Coba klik ini</button>
+
+    <br><br>
+
+    <h2>Using window.alert()</h2>
+    <p>Yang tadi dibuka sama temen-temen? itu yg ini</p>
+
+    <br><br>
+
+    <h2>Using console.log()</h2>
+    <p>Gak nampil? coba lihat di console</p>
+
+    <br><br>
+
+    <h2>Mau ngeprint halaman? pake window.print aja!</h2>
+    <button onclick="window.print()">Klik disini!</button>
+
+    <script>
+        // innerHTML
+        document.getElementById('jml').innerHTML = 5 + 6;
+        // document.write()
+        // document.write(5 + 6);
+        window.alert("BAAAA !!!");
+        console.log("Nah disini saya :)");
+    </script>
+</body>
+
+</html>

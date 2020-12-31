@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object - Learning JavaScript</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        // membuat object
+        var car = {
+            type: "Honda",
+            model: "Jazz",
+            color: "white"
+        };
+        document.getElementById('demo').innerHTML =
+            "Mobil ini merek " + car.type + " dengan model " + car.model + " dan juga berwarna " + car.color;
+
+        // satuin
+        var ale = {
+            firstName: "Lerian",
+            lastName: "Febriana",
+            age: 22,
+            fullname: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+
+        document.getElementById('demo2').innerHTML =
+            "Hallo perkenalkan nama saya " + ale.fullname() + " saya biasa dipanggil " + ale.firstName;
+    </script>
+</body>
+
+</html>
