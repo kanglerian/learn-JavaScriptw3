@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String - Learning JavaScript</title>
+</head>
+
+<body>
+
+    <h2>String escape length</h2>
+    <p id="demo"></p>
+    <br><br>
+    <h2>Never Create Strings as objects.</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var x = txt.length;
+        alert(x);
+
+        var viking = "We are the so called \"Vikings\" it\'s from the north \\ manawe.";
+        document.getElementById("demo").innerHTML = viking;
+
+        var a = "John"; // string
+        var b = new String("John"); // object
+        document.getElementById("demo2").innerHTML = (a == b);
+
+        // jika pakai ini === maka nilai dan type nya harus sama
+    </script>
+</body>
+
+</html>
